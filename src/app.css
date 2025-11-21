@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white overflow-x-hidden;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .code-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent animate-pulse;
+  }
+  
+  .morph-shape {
+    animation: morph 12s ease-in-out infinite;
+  }
+  
+  @keyframes morph {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      transform: rotate(45deg) scale(1.1);
+    }
+    50% {
+      border-radius: 40% 60% 60% 40% / 70% 30% 50% 50%;
+      transform: rotate(90deg) scale(1);
+    }
+    75% {
+      border-radius: 70% 30% 50% 50% / 30% 70% 40% 60%;
+      transform: rotate(135deg) scale(0.95);
+    }
+  }
+  
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
