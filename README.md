@@ -11,13 +11,32 @@ The official website of Devaccto RPL, a student organization specializing in Sof
 [@adityakurnias](https://github.com/adityakurnias) 
 ## Contributing
 
-Contributions are always welcome!
+### 🤝 Contributing Guide
 
-See `contributing.md` for ways to get started.
+Contributions are always welcome!  
+Please follow the workflow below to ensure a smooth and efficient contribution process.  
+For more detailed instructions, please check **`CONTRIBUTING.md`**.
 
-Please adhere to this project's `code of conduct`.
+---
 
+### 🚀 Contribution Workflow
 
+#### 1. Fork the Repository
+Click the **Fork** button at the top-right corner of this repository to create your own copy.
+
+#### 2. Clone Your Fork
+Clone the forked repository into your local machine:
+
+```
+git clone https://github.com/<your-username>/devaccto-official-site.git
+cd devaccto-official-site
+```
+
+#### 3. Make Your Changes
+Implement improvements, new features, refactoring, or documentation updates.
+Make sure your code is clean, consistent, and follows the project’s standards.
+
+#### 4. Open a Pull Request
 ## Tech Stack
 
 **Client:** SvelteKit, TailwindCSS
