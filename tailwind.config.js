@@ -5,7 +5,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Color palette from Figma design
+        // Dark theme color palette
+        dark: {
+          background: '#262B43',
+          'secondary-background': '#313651',
+          'menu-background': '#62929A',
+          text: '#FFFFFF',
+          'text-secondary': '#D3D3D3',
+          'text-tertiary': '#EEEEEE',
+        },
+        // Light theme color palette
+        light: {
+          background: '#7A7A7A',
+          'secondary-background': '#F0F0F0',
+          text: '#D1D1D1',
+          'text-secondary': '#D9D9D9',
+          'menu-background': '#62929A',
+        },
+        // Legacy colors for compatibility
         primary: {
           dark: '#262B43', // Dark blue for dark mode
           light: '#313651', // Slightly lighter blue

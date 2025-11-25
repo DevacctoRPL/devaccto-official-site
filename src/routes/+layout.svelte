@@ -1,22 +1,17 @@
-<script>
+<script lang="ts">
+  import Header from '$lib/components/Header.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import { onMount } from 'svelte';
+  import { isDarkMode } from '$lib/stores/themeStore';
   import '../app.css';
-  export const prerender = true;
 </script>
 
-<svelte:head>
-  <title>Devaccto RPL | Under Construction</title>
-  <meta name="description" content="Website under construction. Transforming ideas into reality through polymorphism." />
-</svelte:head>
-
-<slot />
-
-<style global>
-  html {
-    scroll-behavior: smooth;
-  }
+<div class="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+  <Header />
   
-  body {
-    margin: 0;
-    padding: 0;
-  }
-</style>
+  <main class="flex-grow">
+    <slot />
+  </main>
+  
+  <Footer />
+</div>
