@@ -5,6 +5,7 @@ node_modules/
 .svelte-kit/
 build/
 dist/
+.wrangler/
 
 # Environment files
 .env
